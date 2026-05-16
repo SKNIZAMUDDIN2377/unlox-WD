@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>day-14 dynamic web pages (selecting)</title>
+</head>
+<body>
+  
+<p id="my-p">this is paragraph</p>
+<div class="hell">hello class</div>
+
+<p>hello</p>
+<p>byee</p>
+
+<div class="box"> html</div>
+<div class="box">js</div>
+
+
+
+
+
+
+<script>
+  //goal is to select html tag
+  //1.selecting by id 
+  // getelementtagid()
+  //document=webpage in js
+
+   
+   const ele  =  document.getElementById("my-p")
+   console.log(ele)
+   //to get content from tag means 
+   console.log(ele.textContent)
+//2. class name
+
+  const he =  document.getElementsByClassName("hell")
+  console.log(he)
+
+  //if i dont have id or class how to acess -we can select by tag name it self 
+  //3--tagname access
+
+
+    let p =  document.getElementsByTagName("p")
+    console.log(p)
+
+    //4- queryselector ()- follows the rule of css selector
+    //.-class , #-id
+
+
+      const y= document.querySelector(".box")
+      console.log(y)
+
+      //querySelector only select only one-1 tag
+
+ //5- querySelectorall()
+
+         const x= document.querySelectorAll(".box")
+         console.log(x)
+
+   
+
+    
+
+
+
+
+
+
+    
+
+
+</script>
+  
+</body>
+</html>

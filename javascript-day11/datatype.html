@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data types</title>
+</head>
+<body>
+  <script>
+    // data type- type of data
+    //1)string-anything in double or single quptes
+    var name = "nizam"
+    // build in method to check data name 
+    // typeof(value)
+
+    console.log( typeof(name))
+
+    //2) number -ve , positive whole no 
+
+    var age = 18
+    console.log( typeof(age))
+
+    //3) boolean value - true or false 
+
+    var loggedin=true
+
+    console.log(typeof(loggedin))
+
+    var netsub=false
+    console.log(typeof(netsub))
+
+    //3) null - nothing 
+
+    var a = null
+    console.log(typeof(a))
+
+    //note: due to the bug in js data type of null shoes object os output
+
+    //5 )undifined - dont assign any value 
+
+    var b =
+    console.log(typeof(b))
+
+    //datatype 2 
+    //array - to store diff data types of values
+
+    //symbol-[] square bracket
+    //index from 0
+
+    var students=["nani" , "bob" , "charlie " , true , 123]
+    console.log(students)
+    // too acces the data by arrayname[indexno]
+
+   console.log( students[1])
+
+   //object - collection of data 
+   //symbol - {} curly braces
+   //rule- key:value
+
+   var employee ={
+
+    //key:value
+    name:"cummins" ,
+    email:"cummins@gmail.com",
+    id:1234,
+   working:true
+   }
+
+   // to acces the data type of object
+   console.log(employee)
+   console.log(employee.name)
+
+   // functions - to do a task.
+   // keyword:function 
+   //symbol - ()
+   //task - bill calculator
+
+   function billcal(){
+    // this is body of function - write instructions 
+
+    var product= " milk"
+    var product2 = " bread"
+
+    var price1=100
+    var price2=50
+
+    var total = price1 + price2 ;
+
+    console.log(" the total bill is: ",total)
+
+   }
+
+   billcal() // you should call the functin at the end to print ok
+    
+   
+  </script>
+</body>
+</html>

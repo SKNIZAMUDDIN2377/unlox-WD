@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>rock paper sizzerr</h1>
+
+
+  <div class="choises">
+
+    <button class="rock"> rock</button>
+    <button class="paper">paper</button>
+    <button class="sizer">sizzer</button>
+  </div>
+
+  <p id="result">choose an option to start the game</p>
+
+  <div class="score">
+    <p><strong>scoreboard</strong></p>
+    <p>win <span id="wins">0</span></p>
+    <p>looses<span id="looses">0</span></p>
+    <p>draw<span id="draw">0</span></p>
+  </div>
+
+  <script>
+   let win = 0
+   let looses=0
+   let draw = 0
+
+   function playgame(userchoise){
+   const choises = ["rock " , "paper", " sizzerr"]
+
+   const computerchoise = choises[ Math.floor (Math.random()*3 )          ]
+
+   let result = " "
+
+   //logic o game
+   //elseif
+
+   if(userchoise === computerchoise){
+    result = " you pick the same option ,it is draw"+userchoise
+   }
+   else if {
+
+
+   }
+   }
+   //https://rpssdsda.netlify.app/   sir link to publish the code using netify
+
+  </script>
+  
+</body>
+</html>

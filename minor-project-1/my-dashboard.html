@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Personal Expense Tracker </title>
+  <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+   <!-- i inserted fa-font awesome link in case if using any icons in code -->
+
+  <style>
+    header{
+
+     background-color: rgb(46, 122, 122);
+     height: 170px;
+     border: 2px solid black;
+     cursor: pointer;
+     
+     
+    }
+    main{
+      background-color: rgb(191, 245, 230);
+    }
+    
+      
+    
+    .lines{
+      text-align: center;
+      vertical-align: top;
+      color: white;
+      font: 1em sans-serif;
+      
+    }
+    .line1{
+       text-shadow: 2px 1px 3px rgb(7, 7, 6);
+    }
+
+    .line2{
+      font-family:  arial;
+      color: rgb(4, 0, 0);
+      text-shadow: 2px 1px 2px rgb(250, 251, 252);
+      
+    }
+    hr{
+      width: 200px;
+      background-color: rgb(200, 24, 24);
+      height: 2px;
+    }
+    /* cards */
+    .card-1,.card-2,.card-3{
+
+      /* height:7cm;
+      width: 8cm; */
+      background-color:rgb(251, 255, 255) ;
+      border-radius: 9px;
+      border:2px solid rgb(46, 122, 122);
+      box-shadow: 2px 0 6px rgb(0, 0, 0);
+      /* display:inline-flex; */
+      /* margin: 2cm; */
+     display: inline-flex;
+      justify-content: space-between;
+      margin: 50px;
+      vertical-align: top;
+      flex-direction: column;
+      
+     max-width:300px;
+     padding:20px;
+     border-radius:12px;
+     height: auto;
+     text-align: center;
+     justify-content:center;
+     
+}
+      
+     
+      
+     
+    
+   
+
+    .card-1{
+      margin-left: 3cm;
+      
+      
+
+    }
+    .card-2{
+    
+    }
+    .card-3{
+
+    }
+
+    /* cards hover */
+
+    .card-1:hover{
+
+      transform: scale(1.1) translateX(1px);
+      transition: 0.3s;
+      box-shadow: 3px 2px 33px rgba(55, 255, 0, 0.733) ;
+    }
+     .card-2:hover{
+
+      transform: scale(1.1) translateX(1px);
+      transition: 0.3s;
+      box-shadow: 3px 2px 33px rgba(55, 255, 0, 0.733) ;
+    }
+     .card-3:hover{
+
+      transform: scale(1.1) translateX(1px);
+      transition: 0.3s;
+      box-shadow: 3px 2px 33px rgba(55, 255, 0, 0.733) ;
+    }
+    i{
+     margin: 3.5cm;
+     margin-top: 2cm;
+     color: rgb(244, 114, 7);
+     font-size: 50px;
+     
+      
+    }
+    .icon-one,.icon-two,.icon-three{
+     
+      background-color: beige;
+      border-radius: 80%;
+      border-top: 2px solid black;
+      animation: icon 3s infinite;
+      
+    }
+
+    @keyframes icon{
+      from{  border-top: 2px solid black;
+            border-bottom: 3px solid rgb(19, 18, 18);
+
+      }
+
+      to{
+         border-top: 3px solid rgb(248, 14, 14) ;
+         border-bottom: 3px solid rgb(248, 14, 14);
+         
+      }
+
+    }
+    .exp-list,.amt-list{
+      display: inline-flex;
+      text-align: center;
+      
+    }
+  span{
+    /* here there is month name in footer sec to show it diff i used this */
+    color: rgb(224, 8, 8);
+    animation: month 3s infinite;
+
+  }
+  /* @keyframes month{
+
+    from{
+      color: rgb(240, 5, 5);
+    }
+    to{
+      color: rgb(194, 144, 141);
+      
+    }
+      } */
+  
+  footer{
+    text-align: center;
+    background-color: rgb(46, 122, 122);
+    
+    
+
+
+  }
+  .foot-heading{
+     text-shadow: 2px 1px 2px rgb(10, 11, 11);
+     color: azure;
+     background-color: rgb(78, 172, 172);
+
+  }
+
+  .exp-list{
+    color: azure;
+
+  }
+  .amt-list{
+     color: rgb(224, 8, 8);
+      text-shadow: 2px 1px 2px rgb(10, 11, 11);
+
+  }
+
+     
+    
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <!-- my header will be as per pdf
+   Application title: My Expense Tracker 
+  Subtitle: Track your monthly spending  -->
+  
+     <!-- <img src="logo.jpg" height="100px" width="100px"> -->
+  <div class="lines">
+     <hr>
+    <h1 class="line1">MY EXPENSE TRACKER</h1>
+  <h2 class="line2">Track your monthly spending</h2>
+  <hr>
+  </div>
+
+  </header>
+  <br>
+
+  <main>
+    <!-- //card-1 -->
+      <div class="card-1">
+        <div class="icon-one"> <i class="fa-solid fa-wallet"></i></div>
+         <div>
+          <P>total spent</P>
+         <h1>25,500 &#8377;</h1>
+         <h3>MARCH</h3>
+        
+         </div>
+        
+
+
+
+      </div>
+
+      <!-- card-2 -->
+       <div class="card-2">
+       
+       <div class="icon-two"><i class="fa-solid fa-chart-line"></i></div>
+       <div>
+          <P>high spending</P>
+          <p>shopping</p>
+         <h1>12,000&#8377;</h1>
+        
+         </div>
+       
+
+
+       </div>
+
+       <!-- card-3 -->
+        <div class="card-3">
+        <div class="icon-three"><i class="fa-solid fa-calendar-days"></i></div>
+         <div>
+          <P>curr month</P>
+          <p>march-2025</p>
+         <h2>savings this month-8000&#8377;</h2>
+        
+         </div>
+
+        </div>
+
+  </main>
+
+  <footer>
+     <!-- i use my footer section as Vertical list of expense categories (Food, Transport, Shopping, Entertainment) 
+     as in pdf -->
+
+     <div class="foot-heading">
+      <h1>Expences Categories This Month <span>MARCH</span></h1>
+
+     </div>
+     <div class="exp-list">
+
+   <list>
+    <ul>
+    <h3>FOOD  </h3>
+    <h3>TRANSPORT </h3>
+    <h3>SHOPPING  </h3>
+    <h3>ENTERTAINMENT </h3>
+    </ul>
+   </list>
+   </div>
+
+   <div class="amt-list">
+    
+   <list>
+    <ul>
+       <h3> :3000&#8377;</h3>
+    <h3>:1500&#8377;</h3>
+    <h3>:12,000&#8377;</h3>
+    <h3>:3000&#8377;</h3>
+    </ul>
+   </list>
+   </div>
+  </footer>
+  
+  
+</body>
+</html>

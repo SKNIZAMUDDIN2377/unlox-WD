@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>manupulatin</title>
+</head>
+<body>
+  <p id="text">hii everyone</p>
+
+  <button>hello</button>
+
+  <div id="dd">helllllo</div>
+
+  <p class="byee">hii every one</p>
+
+  <script>
+   const ab = document.getElementById("text")
+       ab.textContent = "hello every one how are you"
+   //what ever we write after = in " " - that is we are assigning a new value
+     
+
+     const buttton = document.getElementsByTagName("button")
+    buttton.textContent = ""
+     
+
+     //inner html - update the content of tag 
+
+     const boo = document.getElementById("dd")
+
+      boo.textContent="hell"
+
+      boo.innerHTML = " <h1> hello </h1>"
+
+       const bbn = document.getElementsByClassName("byee")
+
+         bbn.textContent=""
+
+
+
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>
